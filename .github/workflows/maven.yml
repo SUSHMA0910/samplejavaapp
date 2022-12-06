@@ -28,4 +28,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: deploy to tomcat
-      run: curl -v -u admin:admin -T /home/runner/work/samplejavaapp/samplejavaapp/target/sampleapp.war 'http://ec2-15-206-148-254.ap-south-1.compute.amazonaws.com:8080//manager/test/deploy?path=/demo-project' 
+      run: curl -v -u admin:admin -T /home/runner/work/samplejavaapp/samplejavaapp/target/sampleapp.war 'http://ec2-15-206-148-254.ap-south-1.compute.amazonaws.com:8080/manager/test/deploy?path=/demo-project' 
